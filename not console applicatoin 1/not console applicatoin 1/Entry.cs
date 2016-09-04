@@ -25,7 +25,7 @@ namespace PlatformerGame
             
             Stopwatch timer = new Stopwatch();
             timer.Start();
-            long elapsed = 20;
+            long elapsed = 10;
             DateTime tempTime1, tempTime2;
             Screen lTestScreen = new Screen();
             using (StreamWriter sw = new StreamWriter("LOG.txt"))
@@ -45,7 +45,7 @@ namespace PlatformerGame
                     // The log i created does not show that the draw times are lagging, nor are the update speeds.
                     // Maybe it has to do with something someone once told me about: double buffering. I should
                     // look into this specifically to see if maybe that is what the root is.
-                    if (elapsed > 20)
+                    if (elapsed > 10)
                     {
                         timer.Restart();
 

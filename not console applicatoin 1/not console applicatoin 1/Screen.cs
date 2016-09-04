@@ -39,9 +39,25 @@ namespace PlatformerGame
         public void update(RenderWindow rw, long elapsed)
         {
             Console.WriteLine("updating");
-            Console.WriteLine(platform.GetGlobalBounds());
+            Console.WriteLine(characterPlaceholder.Position);
 
-            characterPlaceholder.Position = new Vector2f(characterPlaceholder.Position.X + 1, characterPlaceholder.Position.Y);
+            if (Keyboard.IsKeyPressed(Keyboard.Key.A))
+            {
+                characterPlaceholder.Position = new Vector2f(characterPlaceholder.Position.X - 5, characterPlaceholder.Position.Y);
+            }
+            if (Keyboard.IsKeyPressed(Keyboard.Key.D))
+            {
+                characterPlaceholder.Position = new Vector2f(characterPlaceholder.Position.X + 5, characterPlaceholder.Position.Y);
+            }
+            if (Keyboard.IsKeyPressed(Keyboard.Key.W))
+            {
+                characterPlaceholder.Position = new Vector2f(characterPlaceholder.Position.X, characterPlaceholder.Position.Y - 5);
+            }
+            if (Keyboard.IsKeyPressed(Keyboard.Key.S))
+            {
+                characterPlaceholder.Position = new Vector2f(characterPlaceholder.Position.X, characterPlaceholder.Position.Y + 5);
+            }
+            //characterPlaceholder.Position = new Vector2f(characterPlaceholder.Position.X + 1, characterPlaceholder.Position.Y);
         }
 
         public void draw(RenderWindow rw, long elapsed)
