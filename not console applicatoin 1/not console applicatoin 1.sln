@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "not console applicatoin 1", "not console applicatoin 1\not console applicatoin 1.csproj", "{4D7AC510-F930-4D3F-A6CF-08AD6385C612}"
 EndProject
 Global
